@@ -1,8 +1,16 @@
 package main
 
-import "github.com/icamonkey/VolumePUI/pkg/volume"
+import (
+	"fmt"
+	"github.com/icamonkey/VolumePUI/pkg/volume"
+)
 
 func main() {
 
-	volume.GetVolume()
+	i, e := volume.GetVolume()
+	if e != nil{
+		fmt.Println("Volume Error:", e)
+	}
+
+	fmt.Println(i)
 }
