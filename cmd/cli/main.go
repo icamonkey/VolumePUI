@@ -1,6 +1,6 @@
 package main
 
-import "github.com/icamonkey/VolumePUI/internal/volume"
+import "github.com/icamonkey/VolumePUI/pkg/volume"
 
 func main() {
 
